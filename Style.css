@@ -16,7 +16,7 @@
 }
 
 body {
-    font-family: "Kaushan Script", cursive;
+    font-family: 'Poppins', sans-serif;
   background: var(--mainWhite);
   color: var(--mainBlack);
 }
@@ -102,7 +102,7 @@ body {
   .banner-link {
     border: hidden;
     font-size: 1rem;
-        font-family: 'Poppins', sans-serif;
+     font-family: 'Poppins', sans-serif;
   }
   .max-height {
 
