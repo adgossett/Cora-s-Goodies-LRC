@@ -1,0 +1,375 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+
+:root {
+  --mainPink: #ef7998;
+  --mainred: #ff0000;
+  --mainYellow: rgb(249, 228, 148);
+  --mainWhite: #fff;
+  --mainBlack: #000;
+  --yellowTrans: rgba(249, 228, 148, 0.5);
+  --mainGrey: rgb(238, 238, 238);
+}
+
+body {
+  font-family: "Kaushan Script", cursive;
+  background: var(--mainWhite);
+  color: var(--mainBlack);
+}
+
+/* global styles */
+.btn-red {
+  color: var(--mainred) !important;
+  border-color: var(--mainred) !important;
+}
+
+.btn-black {
+  color: var(--mainBlack) !important;
+  border-color: var(--mainBlack) !important;
+}
+
+.btn-black:hover {
+  color: var(--mainred) !important;
+  background: var(--mainBlack) !important;
+}
+
+.btn-red:hover {
+  color: var(--mainred) !important;
+  background: var(--mainred) !important;
+}
+
+
+/*nav.links*/
+.navbar-toggler {
+  outline: none ! important;
+}
+
+.toggler-icon {
+  font-size: 2.5rem;
+  color: var(--mainred);
+}
+
+.nav-link {
+  color: var(--mainBlack);
+  transition: all 1s ease-in-out;
+  font-size: 1.5rem;
+}
+
+.nav-link:hover {
+  color: var(--mainred);
+}
+
+
+
+.max-height {
+  min-height: calc(100vh - 76px);
+  background: linear-gradient(var(--mainWhite), var(--mainWhite)),
+    url("../img");
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  position: relative;
+  outline: 0.5rem solid var(--mainGrey);
+  right: 60px;
+
+}
+
+.banner {
+  color: var(--mainWhite);
+  margin-top: -4rem;
+}
+
+.banner-title {
+  color: var(--mainred);
+  font-size: 4rem;
+
+}
+
+.banner-link {
+  font-size: 1.5rem;
+  color: var(--mainBlack);
+  border: 0.2rem solid var(--mainBlack);
+}
+
+.banner-link:hover {
+  background: var(--mainBlack);
+  color: var(--mainred);
+}
+
+/*about section*/
+.about-img__container {
+  position: relative;
+}
+
+.about-img__container::before {
+  content: '';
+  position: absolute;
+  top: -1.5rem;
+  left: -1.7rem;
+  width: 100%;
+  height: 100%;
+  outline: 0.5rem solid var(--mainBlack);
+  z-index: -1;
+  transition: all 1s linear;
+}
+
+.about-img__container:hover::before {
+  top: 0;
+  left: 0;
+}
+
+/*store swwets*/
+.store {
+  background: var(--mainGrey);
+}
+
+.search-box {
+  background: var(--mainred);
+  color: var(var(--mainBlack));
+}
+
+.single-item {
+  transition: all 0.3 linear;
+}
+
+.single-item:hover {
+  box-shadow: 0 10px 15px rgb(0, 0, 0);
+}
+
+.img-container {
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.store-img {
+  transition: all 1s ease-in-out;
+}
+
+.img-container:hover .store-img {
+  transform: scale(1.2);
+}
+
+.store-item-icon {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  padding: 0.75rem;
+  background: var(--mainYellow);
+  border-top-left-radius: 1rem;
+  transition: all 1s ease-out;
+  transform: translate(100%, 100%);
+}
+
+.img-container:hover .store-item-icon {
+  transform: translate(0, 0);
+}
+
+.store-item-icon:hover {
+  color: var(--mainWhite);
+}
+
+/* services */
+.services {
+  color: var(--mainWhite);
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../img/greentomatocake.png")center/cover fixed no-repeat;
+}
+
+.service-title {
+  letter-spacing: 0.5rem;
+}
+
+.service-text {
+  word-spacing: 0.5rem;
+}
+
+/* footer*/
+.footer-title {
+  background: var(--mainWhite);
+  outline: 0.5rem solid var(--mainGrey);
+
+}
+
+.footer-contact {
+  background: var(--mainGrey);
+  outline: 0.5rem solid var(--mainGrey);
+
+}
+
+.footer-icon {
+  font-size: 1.5rem;
+  color: var(--mainBlack);
+  transition: all 0.4 ease-in-out;
+}
+
+.footer-icon:hover {
+  color: var(--mainred);
+}
+
+/*cart*/
+.cart {
+  position: absolute;
+  min-height: 10rem;
+  background: rgb(255, 255, 255, 0.5);
+  top: 0;
+  right: 0;
+  transition: all 0.3s ease-in-out;
+  width: 0;
+  overflow: hidden;
+}
+
+.show-cart {
+  width: 18rem;
+  padding: 2rem 1.5rem;
+  transform: rotatey(-360deg);
+}
+
+.cart-item {
+  transition: all 2s ease-in-out;
+}
+
+.cart-item-remove {
+  color: var(--mainred);
+  transition: all 1s ease-in-out;
+}
+
+.cart-item-remove:hover {
+  transform: scale(1.1);
+  color: Var(--mainBlack);
+}
+
+.cart-item-price {
+  font-size: 0.8rem;
+}
+
+/*image box*/
+.row>.column {
+  padding: 0 8px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.column {
+  float: left;
+  width: 25%;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: black;
+}
+
+/* Modal Content */
+.modal-content {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  width: 90%;
+  max-width: 1200px;
+}
+
+/* The Close Button */
+.close {
+  color: white;
+  position: absolute;
+  top: 10px;
+  right: 25px;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #999;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.mySlides {
+  display: none;
+}
+
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+img {
+  margin-bottom: -4px;
+}
+
+.caption-container {
+  text-align: center;
+  background-color: black;
+  padding: 2px 16px;
+  color: white;
+}
+
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
+img.hover-shadow {
+  transition: 0.3s;
+}
+
+.hover-shadow:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
