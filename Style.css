@@ -78,7 +78,8 @@ body {
   color: var(--mainWhite);
   margin-top: -4rem;
     height: 450px;
-  padding-right: 120px;
+  padding-left: 300px;
+
 }
 
 .banner-title {
