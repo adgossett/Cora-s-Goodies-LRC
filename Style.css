@@ -9,6 +9,11 @@
   --yellowTrans: rgba(249, 228, 148, 0.5);
   --mainGrey: rgb(238, 238, 238);
 }
+:root {
+  font-family: 'Open Sans', sans-serif;
+  font-family: 'Poppins', sans-serif;
+  font-family: 'Roboto', sans-serif;
+}
 
 body {
   font-family: "Kaushan Script", cursive;
@@ -92,7 +97,7 @@ body {
   .banner-title {
     font-size: 1rem;
   }
-  @import url("https://fonts.googleapis.com/css?family=Kaushan+Script");
+  @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Poppins:wght@200&family=Roboto:wght@300&display=swap');
 
   .banner-link {
     border: hidden;
