@@ -16,7 +16,7 @@
 }
 
 body {
-  font-family: "Kaushan Script", cursive;
+    font-family: 'Roboto', sans-serif;
   background: var(--mainWhite);
   color: var(--mainBlack);
 }
