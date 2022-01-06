@@ -87,7 +87,20 @@ body {
   font-size: 4rem;
 
 }
+/* On screens that are 300px or less*/
+@media screen and (max-width: 300px) {
+  .banner-title {
+    font-size: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
+  }
 
+  .banner-link {
+    border: hidden;
+    font-size: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
+    visibility: hidden;
+  }
+}
 .banner-link {
   font-size: 1.5rem;
   color: var(--mainBlack);
