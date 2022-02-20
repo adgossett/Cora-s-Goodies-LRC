@@ -88,6 +88,9 @@ body {
  margin-top: -4rem;
   background-position: center;
   position: relative;
+   height: 300px;
+   padding-left: 90px;
+  padding-right: 180px;
 
 
 }
