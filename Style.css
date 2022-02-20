@@ -82,12 +82,18 @@ body {
 .banner {
   color: var(--mainWhite);
   background-image: url("../jelly.jpg");
+    background-size: cover;
+ margin-top: -4rem;
+    height: 300px;
+   padding-left: 90px;
+  padding-right: 180px;
 
 }
 
 .banner-title {
   color: var(--mainred);
   font-size: 4rem;
+
 
 }
 /* On screens that are 300px or less*/
