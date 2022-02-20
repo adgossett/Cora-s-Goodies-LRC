@@ -81,7 +81,7 @@ body {
 
 .banner {
   color: var(--mainWhite);
-  background-image: url("../jelly.jpg");
+  background-image: url("../peanut.jpg");
     background-repeat: no-repeat;
   background-attachment: fixed;
     background-size: cover;
